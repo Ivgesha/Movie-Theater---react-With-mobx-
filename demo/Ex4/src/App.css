@@ -1,0 +1,24 @@
+/* .App {
+  text-align: center;
+} */
+.ExOneComp {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+}
+.blueBackground {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
+.redBackground {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}

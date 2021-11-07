@@ -1,0 +1,45 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid yellow;
+}
+
+.singlePerson {
+  border: 2px solid black;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.taskSpan {
+  border: 3px solid purple;
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+}
+.ExOneComp {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+}
+.blueBackground {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
+.redBackground {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}

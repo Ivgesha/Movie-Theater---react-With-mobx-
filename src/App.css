@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@1,300&display=swap");
+
+* {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+}
+.loginContainerBackground {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  /* background: linear-gradient(90deg, #0f2027, #2c5364); */
+  background: radial-gradient(#2c5364, #0f2027);
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  color: white;
+}
+.loginContainer-login {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 350px;
+}
+#loginBtn {
+  border-radius: 8px;
+  border: 3px solid #7e0b0b;
+  font-size: 16px;
+  background-color: #7e0b0b;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  /* background-color: Transparent; */
+}
+#loginBtn:hover {
+}
+
+.addMovie {
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #7e0b0b;
+  padding: 8px;
+  margin: 8px;
+  color: white;
+}
+.updateMovie {
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #610202;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+
+  margin: 8px;
+  color: white;
+  transition: 0.4s;
+}
+.updateMovie:hover {
+  background-color: #7e0b0b;
+}
+.deleteMovie {
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #7e0b0b;
+  margin: 8px;
+  color: white;
+  transition: 0.4s;
+  opacity: 0.6;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.deleteMovie:hover {
+  opacity: 1;
+}
+.loginContainer-login-input {
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgb(203, 203, 203);
+  color: white;
+}
+.homePageContainer {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+  color: white;
+}
+.homePageContainer-leftSide {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.homePageContainer-rightSide {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+.homePageContainer-rightSide-newMovieContainer {
+  border: 1px solid white;
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 8px;
+}
+.selectedMovieContainer {
+  border: 1px solid white;
+  width: 600px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.singleMovieContainer {
+  border: 1px solid white;
+  border-radius: 8px;
+  /* width: 300px; */
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  transition: 0.4s;
+  margin: 10px;
+}
+.singleMovieContainer:hover {
+  box-shadow: 0 8px 8px -4px lightblue;
+  transform: translate(4px, -4px);
+}
+.textSection {
+  padding: 30px;
+}
+
+.newMovieCompContainer {
+  /* border: 1px solid white;
+  padding: 20px;
+  width: 500px;
+  margin: 2%; */
+}
+.selectedMovieContainer {
+  /* border: 1px solid white;
+  padding: 20px;
+  width: 500px; */
+}
+.reporstContainer {
+  display: flex;
+  flex-direction: row;
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+
+  color: white;
+}
+
+.reports-rightSide {
+  /* margin-left: 700px; */
+  /* margin-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 60%;
+}
+.reports-rightSide-flterComp {
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* multy choise select with checkboxes */
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.visiblyOption-on {
+  display: block;
+}
+
+.visiblyOption-off {
+  display: none;
+}
+/* multy choise select with checkboxes */
+
+/* multy choise for days */
+
+.multiselectDays {
+  width: 200px;
+}
+
+.selectBoxDays {
+  position: relative;
+}
+
+.selectBoxDays select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelectDays {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+/* multy choise for days */
+
+.filterMovies {
+  /* border: 1px solid white; */
+  width: 550px;
+}
+.filterByDays {
+  display: flex;
+  flex-direction: row;
+}
+.dayFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* genre filter Movies */
+
+.multiselectFilterGenre {
+  width: 200px;
+}
+
+.selectBoxFilterGenre {
+  position: relative;
+}
+
+.overSelectFilterGenre {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* genre filter Movies */
+.reports-leftSide {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+/* css button login test */
+.button {
+  display: inline-block;
+  background-color: #7e0b0b;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* css button login test */
+
+.moveToReports {
+  color: #1cd8d2;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #1cd8d2;
+  border-radius: 4px;
+  padding: 8px;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+.moveToReports:hover {
+  opacity: 1;
+}
