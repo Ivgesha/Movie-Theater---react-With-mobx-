@@ -159,56 +159,71 @@ const NewMovieComp = ({ store }) => {
 
       <div>
         <h2>Days:</h2>
-
-        <input
-          type="checkbox"
-          name="Sunday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Sunday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Monday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Monday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Tuesday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Tuesday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Wednesday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Wednesday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Thursday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Thursday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Friday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Friday </label>
-        <br />
-        <input
-          type="checkbox"
-          name="Saturday"
-          onChange={onChangeDaysCheckboxEventHandler}
-        />
-        <label> Saturday </label>
-        <br />
+        <div className="newMovieDays">
+          <div className="newMovieDaysSingleMovie">
+            <label> Sunday </label>
+            <input
+              type="checkbox"
+              name="Sunday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Monday </label>
+            <input
+              type="checkbox"
+              name="Monday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Tuesday </label>
+            <input
+              type="checkbox"
+              name="Tuesday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Wednesday </label>
+            <input
+              type="checkbox"
+              name="Wednesday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Thursday </label>
+            <input
+              type="checkbox"
+              name="Thursday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Friday </label>
+            <input
+              type="checkbox"
+              name="Friday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+          <div className="newMovieDaysSingleMovie">
+            <label> Saturday </label>
+            <input
+              type="checkbox"
+              name="Saturday"
+              onChange={onChangeDaysCheckboxEventHandler}
+            />
+          </div>
+          {/* <br /> */}
+        </div>
       </div>
       <label>Rating: </label>
 
